@@ -2,7 +2,7 @@ let player;
 let objects = [];
 let score = 0;
 let lives = 3;
-let gameSpeed = 1;
+let gameSpeed = 1.5;
 let cutsceneImages = [];
 let cutsceneIndex = 0;
 let gameState = 'cutscene';
@@ -45,7 +45,7 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
   player = new Player();
-  frameRate(60);
+  frameRate(80);
 
   // Start playing the background audio in a loop
   backgroundSound.loop();
